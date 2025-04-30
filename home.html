@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Childhood Playlist</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Childhood Playlist</h1>
+            <p>Build the soundtrack of your life</p>
+        </header>
+
+        <section class="playlist-section">
+            <label for="yearSlider">Select Your Year:</label>
+            <input type="range" id="yearSlider" min="1995" max="2025" value="2000" step="1">
+            <span id="yearLabel">2000</span>
+
+            <div class="playlist">
+                <h3>Your Playlist</h3>
+                <ul id="playlist"></ul>
+            </div>
+
+            <div class="add-song">
+                <input type="text" id="songInput" placeholder="Add a song URL (YouTube or Spotify)">
+                <input type="text" id="memoryInput" placeholder="Tag a memory for this song">
+                <button onclick="addSong()">Add to Playlist</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="home.js"></script>
+</body>
+</html>
