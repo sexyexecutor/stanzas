@@ -1,2 +1,2 @@
 # stanzas
-web chat platform 
+90s playlist maker
